@@ -3,10 +3,10 @@
 using namespace std;
 
 string pytaniaMatematyczne[] = {
-        "Czy mo¿na dzieliæ przez zero?",
-        "tCzy ka¿dy trójk¹t ma co najmniej dwa k¹ty ostre?",
-        "tCzy liczba PI w przybli¿eniu wynosi 3.14?",
-        "nCzy 1 jest liczb¹ pierwsz¹?",
+        "Czy moÅ¼na dzieliÄ‡ przez zero?",
+        "Czy kaÅ¼dy trÃ³jkÄ…t ma co najmniej dwa kÄ…ty ostre?",
+        "Czy liczba PI w przybliÅ¼eniu wynosi 3.14?",
+        "Czy 1 jest liczbÄ… pierwszÄ…?",
 };
 
 string odpowiedziMatematyczne[] = {
@@ -17,10 +17,10 @@ string odpowiedziMatematyczne[] = {
 };
 
 string pytaniaHistoryczne[] = {
-        "tCzy chrzest Polski mia³ miejsce w 966 r.?",
-        "nCzy Bitwa Pod Grunwaldem mia³a miejsce w 1510 r.?",
-        "tCzy I wojna œwiatowa zakoñczy³a siê w 1918 roku?",
-        "nCzy Bitwa pod Waterloo by³a bitw¹ wojny secesyjnej?",
+        "Czy chrzest Polski miaÅ‚ miejsce w 966 r.?",
+        "Czy Bitwa Pod Grunwaldem miaÅ‚a miejsce w 1510 r.?",
+        "Czy I wojna Å›wiatowa zakoÅ„czyÅ‚a siÄ™ w 1918 roku?",
+        "Czy Bitwa pod Waterloo byÅ‚a bitwÄ… wojny secesyjnej?",
 };
 
 string odpowieziHistoryczne[] = {
@@ -31,10 +31,10 @@ string odpowieziHistoryczne[] = {
 };
 
 string pytaniaInformatyczne[] = {
-        "nCzy Linux to system operacyjny typu closed source?",
-        "nCzy RAM jest rodzajem pamiêci trwa³ej w komputerze?",
-        "tCzy firewall to rodzaj oprogramowania lub sprzêtu u¿ywanego do zabezpieczania komputera przed nieautoryzowanym dostêpem do sieci?",
-        "tCzy komputery kwantowe korzystaj¹ z zasady superpozycji, która pozwala na jednoczesne istnienie wielu stanów obliczeniowych?",
+        "Czy Linux to system operacyjny typu closed source?",
+        "Czy RAM jest rodzajem pamiÄ™ci trwaÅ‚ej w komputerze?",
+        "Czy firewall to rodzaj oprogramowania lub sprzÄ™tu uÅ¼ywanego do zabezpieczania komputera przed nieautoryzowanym dostÄ™pem do sieci?",
+        "Czy komputery kwantowe korzystajÄ… z zasady superpozycji, ktÃ³ra pozwala na jednoczesne istnienie wielu stanÃ³w obliczeniowych?",
 };
 
 string odpowieziInformatyczne[] = {
@@ -45,10 +45,10 @@ string odpowieziInformatyczne[] = {
 };
 
 string pytaniaGeograficzne[] = {
-        "tCzy na œwiecie jest 7 kontynentów?",
-        "tCzy rzeka Nil przep³ywa przez Egipt?",
-        "tCzy Wenezuela graniczy z Brazyli¹?",
-        "nCzy Ocean Indyski jest najwiekszym na œwiecie?",
+        "Czy na Å›wiecie jest 7 kontynentÃ³w?",
+        "Czy rzeka Nil przepÅ‚ywa przez Egipt?",
+        "Czy Wenezuela graniczy z BrazyliÄ…?",
+        "Czy Ocean Indyski jest najwiekszym na Å›wiecie?",
 };
 
 string odpowieziGeograficzne[] = {
@@ -67,10 +67,10 @@ int matematyczny() {
         cin >> odpowiedz;
 
         if((odpowiedz == "tak" && odpowiedziMatematyczne[i] == "tak") || (odpowiedz == "nie" && odpowiedziMatematyczne[i] == "nie")) {
-            cout << "Poprawna odpowiedŸ!" << endl;
+            cout << "Poprawna odpowiedÅº!" << endl;
             poprawneOdpowiedzi++;
         } else {
-            cout << "B³êdna odpowiedŸ! Poprawna odpowiedŸ to: " << odpowiedziMatematyczne[i] << endl;
+            cout << "BÅ‚Ä™dna odpowiedÅº! Poprawna odpowiedÅº to: " << odpowiedziMatematyczne[i] << endl;
         }
     }
 
@@ -86,10 +86,10 @@ int historyczny() {
         cin >> odpowiedz;
 
         if((odpowiedz == "tak" && odpowieziHistoryczne[i] == "tak") || (odpowiedz == "nie" && odpowieziHistoryczne[i] == "nie")) {
-            cout << "Poprawna odpowiedŸ!" << endl;
+            cout << "Poprawna odpowiedÅº!" << endl;
             poprawneOdpowiedzi++;
         } else {
-            cout << "B³êdna odpowiedŸ! Poprawna odpowiedŸ to: " << odpowieziHistoryczne[i] << endl;
+            cout << "BÅ‚Ä™dna odpowiedÅº! Poprawna odpowiedÅº to: " << odpowieziHistoryczne[i] << endl;
         }
     }
     return poprawneOdpowiedzi;
@@ -104,10 +104,10 @@ int informatyczny() {
         cin >> odpowiedz;
 
         if((odpowiedz == "tak" && odpowieziInformatyczne[i] == "tak") || (odpowiedz == "nie" && odpowieziInformatyczne[i] == "nie")) {
-            cout << "Poprawna odpowiedŸ!" << endl;
+            cout << "Poprawna odpowiedÅº!" << endl;
             poprawneOdpowiedzi++;
         } else {
-            cout << "B³êdna odpowiedŸ! Poprawna odpowiedŸ to: " << odpowieziInformatyczne[i] << endl;
+            cout << "BÅ‚Ä™dna odpowiedÅº! Poprawna odpowiedÅº to: " << odpowieziInformatyczne[i] << endl;
         }
     }
     return poprawneOdpowiedzi;
@@ -122,10 +122,10 @@ int geograficzny() {
         cin >> odpowiedz;
 
         if((odpowiedz == "tak" && odpowieziGeograficzne[i] == "tak") || (odpowiedz == "nie" && odpowieziGeograficzne[i] == "nie")) {
-            cout << "Poprawna odpowiedŸ!" << endl;
+            cout << "Poprawna odpowiedÅº!" << endl;
             poprawneOdpowiedzi++;
         } else {
-            cout << "B³êdna odpowiedŸ! Poprawna odpowiedŸ to: " << odpowieziGeograficzne[i] << endl;
+            cout << "BÅ‚Ä™dna odpowiedÅº! Poprawna odpowiedÅº to: " << odpowieziGeograficzne[i] << endl;
         }
     }
     return poprawneOdpowiedzi;
@@ -137,7 +137,7 @@ int main()
     string odp;
     int odpowiedz, temp;
 
-    cout << "Witam w aplikacji do realizacji testów!" << endl;
+    cout << "Witam w aplikacji do realizacji testÃ³w!" << endl;
 
     while(true) {
         for(int i = 0; i < (sizeof(testy)/sizeof(testy[0])); i++) {
@@ -148,31 +148,31 @@ int main()
         switch(odpowiedz) {
         case 1:
             temp = matematyczny();
-            cout << "Udzieli³eœ odpowiedzi poprawnie na: " << temp << " pytanie/pytania z 4." << endl;
+            cout << "UdzieliÅ‚eÅ› odpowiedzi poprawnie na: " << temp << " pytanie/pytania z 4." << endl;
             break;
         case 2:
             temp = historyczny();
-            cout << "Udzieli³eœ odpowiedzi poprawnie na: " << temp << " pytanie/pytania z 4." << endl;
+            cout << "UdzieliÅ‚eÅ› odpowiedzi poprawnie na: " << temp << " pytanie/pytania z 4." << endl;
             break;
         case 3:
             temp = informatyczny();
-            cout << "Udzieli³eœ odpowiedzi poprawnie na: " << temp << " pytanie/pytania z 4." << endl;
+            cout << "UdzieliÅ‚eÅ› odpowiedzi poprawnie na: " << temp << " pytanie/pytania z 4." << endl;
             break;
         case 4:
             temp = geograficzny();
-            cout << "Udzieli³eœ odpowiedzi poprawnie na: " << temp << " pytanie/pytania z 4." << endl;
+            cout << "UdzieliÅ‚eÅ› odpowiedzi poprawnie na: " << temp << " pytanie/pytania z 4." << endl;
             break;
         default:
-            cout << endl << "Opcja powinna mieœciæ siê w zakresie od 1 do 4!" << endl;
+            cout << endl << "Opcja powinna mieÅ›ciÄ‡ siÄ™ w zakresie od 1 do 4!" << endl;
         }
 
-        cout << "Czy chcesz kontynuowaæ? (Y/N)" << endl;
+        cout << "Czy chcesz kontynuowaÄ‡? (Y/N)" << endl;
         cin >> odp;
 
         if (odp == "N" || odp == "n") {
             return 0;
         } else if(odp != "Y" && odp != "y") {
-            cout << "Niepoprawna odpowiedŸ, przerywam dzia³anie." << endl;
+            cout << "Niepoprawna odpowiedÅº, przerywam dziaÅ‚anie." << endl;
             return 0;
         }
     }
